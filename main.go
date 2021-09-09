@@ -12,6 +12,6 @@ func main() {
 	defer database.Disconnect(client) // Disconnecting once the main finished execution
 	routes.RegisterRoutes(app)
 
-	app.Listen(":3000")
+	app.Listen(":3001")
 
 }
