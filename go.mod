@@ -4,6 +4,7 @@ go 1.17
 
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
+	github.com/aws/aws-sdk-go v1.41.4 // indirect
 	github.com/cosmtrek/air v1.27.3 // indirect
 	github.com/creack/pty v1.1.15 // indirect
 	github.com/fatih/color v1.12.0 // indirect
@@ -14,6 +15,8 @@ require (
 	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.2 // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
+	github.com/joho/godotenv v1.4.0 // indirect
 	github.com/klauspost/compress v1.13.4 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect

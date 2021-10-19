@@ -4,6 +4,9 @@ type contactinfo struct {
 	Phone   string `json:"phone"`
 	Address string `json:"address"`
 	Website string `json:"website"`
+	City    string
+	State   string
+	Zip     string
 }
 
 type reviews struct {
@@ -14,6 +17,8 @@ type reviews struct {
 }
 
 type Listings struct {
+	Title       string
+	Type        string
 	Details     string      `json:"details"`
 	ContactInfo contactinfo `json:"contactinfo"`
 	Reviews     []reviews   `json:"reviews"`

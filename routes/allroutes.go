@@ -18,5 +18,6 @@ func RegisterRoutes(app *fiber.App) {
 
 	app.Post("/createListing", handlers.CreateListing)
 	app.Get("/allListings", handlers.GetListing)
+	app.Get("/getListingById/:id", handlers.GetListingById)
 
 }
