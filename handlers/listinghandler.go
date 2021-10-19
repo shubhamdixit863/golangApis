@@ -3,6 +3,7 @@ package handlers
 import (
 	"context"
 	"fmt"
+	"os"
 
 	"github.com/shubhamdixit863/golangApis/models"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -19,6 +20,8 @@ func CreateListing(c *fiber.Ctx) error {
 	c.SaveFile(file, fmt.Sprintf("./uploads/%s", file.Filename))
 
 	fileName := util.UploadS3(fmt.Sprintf("./uploads/%s", file.Filename))
+	_ = os.Remove(fmt.Sprintf("./uploads/%s", file.Filename))
+
 	fmt.Println(fileName)
 
 	p := new(models.Listings)
